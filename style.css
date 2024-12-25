@@ -1,0 +1,125 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation styles */
+nav {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px 0;
+        margin: 5px 0;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+#backToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 30px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  font-size: 18px; /* Increase font size */
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove borders */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Pointer/hand icon */
+  transition: opacity 0.3s; /* Smooth transition */
+}
+
+#backToTopBtn:hover {
+  background-color: #555; /* Dark grey background on hover */
+}
